@@ -107,7 +107,7 @@ https://api.megamax.me/api/file/get?login={login}&key={key}&folder={folder}
 }
 ```
 ## Upload File
-Upload a video file. Before uploading a file. You need to generate an upload URL. And that returned URL should be requested with POST and must be multipart/form-data
+Upload a video file. Before uploading a file. You need to generate an upload URL. And that returned URL should be requested with $\color{red}{POST}$ and must be $\color{red}{multipart/form-data}$
 #### Request:
 ```
 https://api.megamax.me/api/file/upload/generate?login={login}&key={key}
@@ -148,5 +148,34 @@ curl -k -F file=@/path/to/sample.mp4 -F login={login} -F key={key} -F folder={fo
   }
 }
 ```
+## Get Direct 'Streams' and 'Downloads' URL
+Get direct URL of streams file or download. Make sure you have enough available premium plan. Check our premium plans
+#### Request:
+```
+https://api.megamax.me/api/file/get/{hashid}/direct?login={login}&key={key}
+```
+#### Parameters:
+| Name  | Description | Example | Required
+| ------------- | ------------- | ------------- |  ------------- |
+| login | API Login	 | example@mail.com |  yes |
+| key | API Key | IUPMWsMjrAHzdjTBoRyHCdeZ4F0mVI7d |  yes |
+| hashid | File HashID | WeLMEmnAjkDgPvqK |  yes |
+#### Response:
+```json
+{
+  "status": "success",
+  "message": "OK",
+  "result": {
+    "Source": {
+      "label": "Source",
+      "stream": "https://s1.cdn.megamax.cloud/attach/6/1681611766/TTm6Dp0fPJ4Ns/MNCT_EP_02_.mp4?signature=739179e7b7268da8e67a9d2bc73ea5b279980daa3ff03eb0067b3043888b1c7d",
+      "download": "https://s1.cdn.megamax.cloud/attach/6/1681611766/TTm6Dp0fPJ4Ns/MNCT_EP_02_.mp4?signature=739179e7b7268da8e67a9d2bc73ea5b279980daa3ff03eb0067b3043888b1c7d&dl=1",
+      "expires_at": "2023-01-18T06:05:39.663033Z"
+    }
+  }
+}
+```
+
+
 
 
