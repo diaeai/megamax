@@ -148,6 +148,54 @@ curl -k -F file=@/path/to/sample.mp4 -F login={login} -F key={key} -F folder={fo
   }
 }
 ```
+## Get Mirrors 'Iframes' and 'Downloads' URL
+Get direct Mirrors URL of iframes video or download.
+#### Request:
+```
+https://api.megamax.me/api/mirror/get/{hashid}?login={login}&key={key}
+```
+#### Parameters:
+| Name  | Description | Example | Required
+| ------------- | ------------- | ------------- |  ------------- |
+| login | API Login	 | example@mail.com |  yes |
+| key | API Key | IUPMWsMjrAHzdjTBoRyHCdeZ4F0mVI7d |  yes |
+| hashid | File HashID | WeLMEmnAjkDgPvqK |  yes |
+#### Response:
+```json
+{
+  "status": "success",
+  "message": "OK",
+  "result": [
+    {
+      "title": "source",
+      "size": 231966357,
+      "mirrors": [
+        {
+          "driver": "ok",
+          "iframe": "//ok.ru/videoembed/5937251879654",
+          "link": null,
+          "uploaded_at": "2023-04-13 22:46:37",
+          "checked_at": null
+        },
+        {
+          "driver": "uptobox",
+          "iframe": "//uptostream.com/iframe/1w261fc75gme",
+          "link": "https://uptobox.com/1w261fc75gme",
+          "uploaded_at": "2023-04-13 22:46:38",
+          "checked_at": null
+        },
+        {
+          "driver": "streamlare",
+          "iframe": "//streamlare.com/e/gLXEDVM03L9nQY74",
+          "link": "//streamlare.com/v/gLXEDVM03L9nQY74",
+          "uploaded_at": "2023-04-13 22:46:41",
+          "checked_at": null
+        }
+      ]
+    }
+  ]
+}
+```
 ## Get Direct 'Streams' and 'Downloads' URL
 Get direct URL of streams file or download. Make sure you have enough available premium plan. Check our premium plans
 #### Request:
