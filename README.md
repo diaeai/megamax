@@ -213,14 +213,15 @@ https://api.megamax.me/api/file/get/{hashid}/direct?login={login}&key={key}
 {
   "status": "success",
   "message": "OK",
-  "result": {
-    "Source": {
-      "label": "Source",
-      "stream": "https://s1.cdn.megamax.cloud/attach/6/1681611766/TTm6Dp0fPJ4Ns/MNCT_EP_02_.mp4?signature=739179e7b7268da8e67a9d2bc73ea5b279980daa3ff03eb0067b3043888b1c7d",
-      "download": "https://s1.cdn.megamax.cloud/attach/6/1681611766/TTm6Dp0fPJ4Ns/MNCT_EP_02_.mp4?signature=739179e7b7268da8e67a9d2bc73ea5b279980daa3ff03eb0067b3043888b1c7d&dl=1",
-      "expires_at": "2023-01-18T06:05:39.663033Z"
+  "result": [
+    {
+      "label": "720p (source)",
+      "size": 733297168,
+      "stream": "https://cdn1.megamax.cloud/attach/1/1681874106/UeyDOobUnWCKp/MNCT_EP_02_.mp4?signature=8c532269ebd6fc781407a837e221a19e37e4bdefcbc72b9ce1be4a0e2de0094a",
+      "download": "https://cdn1.megamax.cloud/attach/1/1681874106/UeyDOobUnWCKp/MNCT_EP_02_.mp4?dl=1&signature=268a08ed0d7d75b52e27b60729a671a055f974d5597c1473f66b30784a7303bb",
+      "expires_at": "2023-04-19T03:15:06.669931Z"
     }
-  }
+  ]
 }
 ```
 
