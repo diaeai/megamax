@@ -215,7 +215,7 @@ https://api.megamax.me/api/file/get/{hashid}/direct?login={login}&key={key}
   "message": "OK",
   "result": [
     {
-      "label": "720p (source)",
+      "label": "source",
       "size": 733297168,
       "stream": "https://cdn1.megamax.cloud/attach/1/1681874106/UeyDOobUnWCKp/MNCT_EP_02_.mp4?signature=8c532269ebd6fc781407a837e221a19e37e4bdefcbc72b9ce1be4a0e2de0094a",
       "download": "https://cdn1.megamax.cloud/attach/1/1681874106/UeyDOobUnWCKp/MNCT_EP_02_.mp4?dl=1&signature=268a08ed0d7d75b52e27b60729a671a055f974d5597c1473f66b30784a7303bb",
