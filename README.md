@@ -74,26 +74,6 @@ https://api.megamax.me/api/file/get?login={login}&key={key}&folder={folder}
       "created_at": "2023-04-15T03:15:21.000000Z"
     },
     {
-      "hashid": "A0yEgf1z7NCha",
-      "name": "Wataten!: An Angel Flew Down To Me - Ep 13",
-      "type": "video",
-      "size": 1380063437,
-      "views": 0,
-      "poster": "0YflPp787JDPG.jpg",
-      "status": "converted",
-      "created_at": "2023-04-14T07:16:19.000000Z"
-    },
-    {
-      "hashid": "VMCXEq7gz4PUK",
-      "name": "ORYNT EP 01 FHD",
-      "type": "video",
-      "size": 231966357,
-      "views": 2,
-      "poster": "dP2FhsByVGTka.jpg",
-      "status": "converted",
-      "created_at": "2023-04-13T22:46:29.000000Z"
-    },
-    {
       "hashid": "Bp5RI9krVCAEK",
       "name": "YGS EP 02 FHD",
       "type": "video",
